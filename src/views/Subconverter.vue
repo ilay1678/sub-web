@@ -257,6 +257,16 @@ export default {
         },
         backendOptions: [{ value: "http://127.0.0.1:25500/sub?" }],
         remoteConfig: [
+         {
+            label: "ilay",
+            options: [
+              {
+                label: "acl4ssr",
+                value:
+                  "https://cdn.jsdelivr.net/gh/ilay1678/Profiles@master/subconverter/ACL4SSR.ini"
+              }
+            ]
+          },
           {
             label: "universal",
             options: [
