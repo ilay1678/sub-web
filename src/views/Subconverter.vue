@@ -515,6 +515,10 @@ export default {
           if (this.form.tpl.clash.doh === true) {
             this.customSubUrl += "&clash.doh=true";
           }
+          
+          if (this.form.tpl.clash.dns === true) {
+            this.customSubUrl += "&clash.dns=true";
+          }
 
           this.customSubUrl += "&new_name=" + this.form.new_name.toString();
         }
