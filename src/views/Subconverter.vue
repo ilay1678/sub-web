@@ -103,6 +103,9 @@
                       <el-row>
                         <el-checkbox v-model="form.tpl.surge.doh" label="Surge.DoH"></el-checkbox>
                       </el-row>
+                       <el-row>
+                        <el-checkbox v-model="form.tpl.clash.dns" label="Clash.DNS"></el-checkbox>
+                      </el-row>
                       <el-row>
                         <el-checkbox v-model="form.tpl.clash.doh" label="Clash.DoH"></el-checkbox>
                       </el-row>
@@ -370,7 +373,8 @@ export default {
             doh: false // dns 查询是否使用 DoH
           },
           clash: {
-            doh: false
+            doh: false,
+            dns: true
           }
         }
       },
